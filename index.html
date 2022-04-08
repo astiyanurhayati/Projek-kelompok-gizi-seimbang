@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="img/main.png" type="image/gif" sizes="16x16" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- <script type="text/javascript" src="https://cdn.prinsh.com/NathanPrinsley-effect/efek-salju.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.prinsh.com/NathanPrinsley-effect/daun-berguguran.js"></script> -->
+    <script type="text/javascript" src="https://cdn.prinsh.com/NathanPrinsley-effect/green-bintang-jatuh.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.prinsh.com/NathanPrinsley-effect/blue-fireworks.js"></script> -->
+
+    <header>
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <ul>
+            <li>
+              <a href="index.html"><span>Home</span></a>
+            </li>
+            <li><a href="pengenalan.html">Pengenalan</a></li>
+            <li><a href="panduan.php">Panduan</a></li>
+            <li><a href="kalkulator.php">Kalkulator</a></li>
+          </ul>
+        </div>
+        <span class="click" style="font-size: 30px; cursor: pointer; float: right" onclick="openNav()">&#9776; </span>
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+      </nav>
+      <img src="img/wk.png" alt="wikrama-logo" />
+    </header>
+
+    <main>
+      <div class="bg1">
+        <img class="deskbg" src="img/latar.png" alt="" />
+        <img class="hpbg" src="img/hpbg.png" alt="" />
+      </div>
+
+      <div class="judul">
+        <h1>
+          Selamat Datang Di<br />
+          Website Gizi Seimbang
+        </h1>
+      </div>
+
+      <div class="btn">
+        <a href="#about">Next</a>
+      </div>
+      <!-- bagian about -->
+      <div id="about">
+        <div class="kiri">
+          <img src="img/kita.jpg" alt="" />
+        </div>
+        <div class="kanan">
+          <h3>About Us</h3>
+          <p>
+            Kami merupakan pelajar di SmK WIkrama Bogor. <br />Website ini kami buat untuk mempermudah kalian dalam menghitung tentang gizi seimbang. <br /><br />
+            Happy nice day:)
+          </p>
+
+          <!-- bagian kontak -->
+          <div class="kontak">
+            <div class="kirikontak">
+              <div class="iconkiri">
+                <i class="fa-brands fa-instagram-square"></i>
+                <h4>Instagram</h4>
+              </div>
+              <div class="isi-icon-kiri">
+                <ul>
+                  <li>
+                    <a href="https://www.instagram.com/nazifffa_/" target="_blank">@Nazifaumar</a>
+                  </li>
+                  <li><a href="https://www.instagram.com/astiynn_/" target="_blank">@AstiyaNurhayati</a></li>
+                  <li><a href="https://www.instagram.com/dyyllsx/" target="_blank">@Dillayullisa</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="kanankontak">
+              <div class="iconkanan">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Gmail</h4>
+              </div>
+              <div class="isi-icon-kanan">
+                <ul>
+                  <li><a href="#">nazifaumar@gmail.com</a></li>
+                  <li><a href="#">astiyanurayati@gmail.com</a></li>
+                  <li><a href="#">Dillayulisa@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- ---------- -->
+        </div>
+      </div>
+    </main>
+    <!-- bagian footer -->
+    <footer>
+      <h3>© 2022 kelompok 7</h3>
+    </footer>
+  </body>
+</html>

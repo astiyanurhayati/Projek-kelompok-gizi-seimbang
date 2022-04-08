@@ -1,0 +1,31 @@
+body {
+  background-color: #1e1e1e;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 50px;
+}
+main img {
+  width: 300px;
+}
+.btn {
+  margin-top: 50px;
+}
+.btn a {
+  padding: 5px 20px;
+  background-color: #c5934a;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn a:hover {
+  background-color: #966a28;
+}

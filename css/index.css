@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c5934a;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.76);
+  position: fixed;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+
+header nav {
+  float: right;
+  margin: 26px;
+  padding-right: 50px;
+  padding-top: 7px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+header nav ul li a span {
+  color: #c5934a;
+}
+header img {
+  width: 55px;
+  background: white;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-left: 25px;
+  opacity: 0.7;
+}
+.bg1 img {
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.judul h1 {
+  font-size: 50px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-bottom: solid 3px white;
+  text-align: center;
+
+  text-shadow: #000000c4 2px 2px 4px;
+}
+.judul {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.btn a {
+  padding: 10px 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c5934a;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: 0.7s;
+}
+.btn a:hover {
+  background-color: black;
+}
+
+.kiri img {
+  width: 220px;
+  border-radius: 50%;
+}
+.kanan {
+  padding-top: 40px;
+  margin-left: 80px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+.kanan h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.kanan p {
+  background-color: rgba(0, 0, 0, 0.418);
+  border-radius: 10px;
+  margin-left: -30px;
+  width: 600px;
+  padding: 20px;
+  font-weight: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+#about {
+  flex-direction: row;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 80px;
+  margin-right: 100px;
+  padding-top: 100px;
+}
+.kiri {
+  margin-top: 30px;
+}
+.clear {
+  clear: both;
+}
+.kontak {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+.isi-icon-kiri a,
+.isi-icon-kanan a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+.isi-icon-kiri a:hover {
+  color: wheat;
+}
+.isi-icon-kanan,
+.isi-icon-kiri {
+  margin-top: 10px;
+  line-height: 20px;
+}
+.iconkanan i,
+.iconkiri i {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.kontak .iconkiri {
+  display: flex;
+  flex-direction: row;
+}
+.kirikontak {
+  display: flex;
+  flex-direction: column;
+}
+.kontak .iconkanan {
+  display: flex;
+  flex-direction: row;
+}
+.kanankontak {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+footer {
+  margin-top: 100px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.473);
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+footer h3 {
+  font-weight: 100;
+}
+
+@media screen and (min-width: 750px) {
+  .closebtn {
+    display: none;
+  }
+  .click {
+    display: none;
+  }
+  .hpbg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .click {
+    color: #c5934a;
+  }
+  .closebtn {
+    position: absolute;
+    top: 5%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 5px 5px 5px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 3%;
+    color: #c5934a;
+  }
+
+  header nav {
+    float: right;
+    margin: none;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  header img {
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    margin-top: 14px;
+    margin-left: 20px;
+    opacity: 0.7;
+  }
+  #about {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .kanan p {
+    width: 200px;
+  }
+
+  .kontak {
+    flex-direction: column;
+  }
+  .kanankontak {
+    margin-left: 0;
+  }
+  .deskbg {
+    display: none;
+  }
+  .hpbg {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .judul h1 {
+    font-size: 35px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border-bottom: none;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .judul {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+  }
+  .btn a {
+    top: 55%;
+    left: 35%;
+  }
+  .kiri {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kanan {
+    margin-left: 0;
+  }
+  .kanan h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .kanan p {
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+  .bg1 img {
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .kontak {
+    margin: auto;
+  }
+  .kontak .iconkanan {
+    margin-top: 30px;
+  }
+  footer {
+    font-size: 13px;
+  }
+}
