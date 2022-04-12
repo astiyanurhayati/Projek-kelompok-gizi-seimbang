@@ -90,6 +90,7 @@ input[type="checkbox"] {
   height: 18px;
   width: 18px;
   margin-left: 70px;
+  cursor: pointer;
 }
 input[type="submit"] {
   padding: 10px 20px;
@@ -194,4 +195,154 @@ form .lauk-pauk {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media screen and (min-width: 750px) {
+  .closebtn {
+    display: none;
+  }
+  .click {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .click {
+    color: #c5934a;
+  }
+  .closebtn {
+    position: absolute;
+    top: 5%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 5px 5px 5px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 3%;
+    color: #c5934a;
+  }
+  header img {
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    margin-top: 14px;
+    margin-left: 20px;
+    opacity: 0.7;
+  }
+  header nav {
+    margin: 18px;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .pjn {
+    padding-right: 0;
+    padding-left: 30px;
+    font-size: 17px;
+    padding-right: 30px;
+  }
+  form .gol-b {
+    flex-direction: column;
+  }
+  .gol-buah {
+    flex-direction: column;
+  }
+  form .lauk-pauk {
+    flex-direction: column;
+  }
+  form .gol-sayur {
+    flex-direction: column;
+  }
+  input[type="checkbox"] {
+    margin-left: 15px;
+  }
+  table {
+    margin-left: 30px;
+    font-size: 16px;
+  }
+  .btn a {
+    margin-left: 30px;
+  }
+  .subjudul h2 {
+    color: white;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 160px;
+    border-bottom: #c5934a 2px solid;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    width: 299px;
+    margin-left: 30px;
+  }
+  table .padding-left {
+    padding-left: 30px;
+  }
+  .verikal_center {
+    display: none;
+  }
+  .g-lauk-pauk {
+    display: none;
+  }
+  .g-buah {
+    display: none;
+  }
+  .g-sayur {
+    display: none;
+  }
+  .judul {
+    margin-top: 115px;
+
+    font-family: "Poppins", sans-serif;
+    padding: 10px 50px 10px 50px;
+
+    border-radius: 5px;
+    font-size: 15px;
+
+    margin-right: 25px;
+  }
+  form h3 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .btn-hasil {
+    width: 100%;
+    text-align: center;
+  }
+  input[type="submit"] {
+    margin-left: 0;
+  }
+  .subjudul {
+    width: 100%;
+    text-align: center;
+  }
+  .subjudul h2 {
+    margin-left: 50px;
+  }
 }

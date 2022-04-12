@@ -1,3 +1,19 @@
+
+<?php
+ 
+if(isset($_POST['hitung'])){
+    if(!empty($_POST['JumlahKalori'])) {
+        $JumlahKalori = 0;
+        foreach($_POST['JumlahKalori'] as $kalori){
+            $JumlahKalori += $kalori;
+        }
+        
+    }
+    
+ 
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +28,7 @@
     <main>
       <img src="img/hasilkalkulator.png" alt="" />
       <h3>Jumlah Kalori yang anda konsumsi adalah</h3>
-      <h2>122 kkal</h2>
+      <h2> <?php echo $JumlahKalori?> </h2>
       <h3>Teridiri dari = 1 Gelas Susu</h3>
       <div class="btn">
         <a href="kalkulator.php"> BACK </a>

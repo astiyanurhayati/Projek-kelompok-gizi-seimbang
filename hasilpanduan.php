@@ -1,11 +1,11 @@
 <?php
 // print_r($_POST);
 
-@$Berat = $_POST ['berat'];
-@$Tinggi = $_POST ['tinggi'];
-@$Gender = $_POST['gender'];
-@$Usia = $_POST ['usia'];
-@$aktivitas = $_POST['aktivitas'];
+$Berat = $_POST ['berat'];
+$Tinggi = $_POST ['tinggi'];
+$Gender = $_POST['gender'];
+$Usia = $_POST ['usia'];
+$aktivitas = $_POST['aktivitas'];
 
 
 
@@ -52,7 +52,7 @@ $GrKarbohidrat = 0;
         
         // Rincian kalori
         $Protein = 15 * $HasilAkg / 100;
-        $Karbohidrat = 60 * $HasilAkg /100;
+        $Karbohidrat = 60 * $HasilAkg / 100;
         $Lemak = 15 * $HasilAkg / 100;
 
         //Rincian Gram
@@ -90,7 +90,7 @@ $GrKarbohidrat = 0;
         <li>Lemak : <span> <?php echo ceil($Lemak) ?> kalori atau <?php echo ceil($GrLemak)?> gram</span></li>
         <li>Karbohidrat : <span> <?php echo ceil($Karbohidrat) ?> kalori atau <?php echo ceil ($GrKarbohidrat) ?> gram</span></li>
       </ul>
-      <h5>*Untuk menghitung kebutuhan gizi, kami menggunakan rumus <span href="https://en.wikipedia.org/wiki/Harris%E2%80%93Benedict_equation">Harris Benedict</span></h5>
+      <h5>*Untuk menghitung kebutuhan gizi, kami menggunakan rumus <span> <a href="https://en.wikipedia.org/wiki/Harris%E2%80%93Benedict_equation" target='_blank'> Harris Benedict</a></span></h5>
       <div class="btn">
         <a href="panduan.php"> BACK </a>
       </div>

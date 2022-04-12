@@ -90,8 +90,8 @@
 
       
               <div class="select">
-                <select name="gender"  required>
-                  <option value="pilih" hidden>Pilih Jenis Kelamin</option>
+                <select name="gender" required>
+                  <option value="" hidden>Pilih Jenis Kelamin</option>
                   <option value="pria" name="gender">Pria</option>
                   <option value="wanita" name="gender">Wanita</option>
                 
@@ -113,9 +113,9 @@
         
               <div class="select">
                 <h3>Aktivitas Fisik yang anda lakukan</h3>
-                <select name="aktivitas"  required>
+                <select name="aktivitas" required>
                   
-                  <option value="pilih" hidden >Pilih Aktivitas Fisik</option>
+                  <option value="" hidden >Pilih Aktivitas Fisik</option>
                   <option value="sangatjarang" name="aktivitas">Sangat Jarang Berolahraga</option>
                   <option value="jarang" name="aktivitas">Jarang olahraga</option>
                   <option value="cukup" name="aktivitas">Cukup Olahraga</option>

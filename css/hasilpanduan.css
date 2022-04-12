@@ -51,6 +51,11 @@ h5 {
 .clear {
   clear: both;
 }
+span a {
+  color: #c5934a;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 680px) {
   ul {
     font-size: 18px;
