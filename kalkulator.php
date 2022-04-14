@@ -73,6 +73,21 @@ $SayurLodeh = $_POST['JumlahKalori'] =61;
 $CahKacangPanjang = $_POST['JumlahKalori'] = 72;
 $TumisBuncis = $_POST['JumlahKalori'] = 52;
 
+$Apel= $_POST['JumlahKalori'] = 92;
+$Belimbing= $_POST['JumlahKalori'] = 80;
+$Duku = $_POST['JumlahKalori'] = 81;
+$JambuAir = $_POST['JumlahKalori'] = 35.5;
+$JambuBiji = $_POST['JumlahKalori'] = 157;
+$JerukMedan = $_POST['JumlahKalori'] = 46;
+$ManggaManalagi = $_POST['JumlahKalori'] = 72;
+$Nanas = $_POST['JumlahKalori'] = 104;
+$Pepaya = $_POST['JumlahKalori'] = 46;
+$Pir = $_POST['JumlahKalori'] = 80;
+$Salak = $_POST['JumlahKalori'] = 63.6;
+$Semangka = $_POST['JumlahKalori'] = 48;
+
+
+
 
 
 
@@ -444,67 +459,62 @@ $TumisBuncis = $_POST['JumlahKalori'] = 52;
                             <tr>
                               <td>Apel</td>
                               <td class="padding-left">= 160 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Apel ?>" /></td>
                             </tr>
                             <tr>
                               <td>Belimbing</td>
                               <td class="padding-left">= 160 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Belimbing?>" /></td>
                             </tr>
                             <tr>
                               <td>Duku</td>
                               <td class="padding-left">= 200 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Duku?>" /></td>
                             </tr>
                             <tr>
                               <td>Jambu Air</td>
                               <td class="padding-left">= 60 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $JambuAir?>" /></td>
                             </tr>
                             <tr>
                               <td>jambu Biji</td>
                               <td class="padding-left">= 320 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $JambuBiji?>" /></td>
                             </tr>
                             <tr>
                               <td>Jeruk Medan</td>
                               <td class="padding-left">= 140 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $JerukMedan?>" /></td>
                             </tr>
                             <tr>
                               <td>Mangga Manalagi</td>
                               <td class="padding-left">= 100 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $ManggaManalagi ?>" /></td>
                             </tr>
                             <tr>
                               <td>Nanas</td>
                               <td class="padding-left">= 200 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Nanas?>" /></td>
                             </tr>
                             <tr>
                               <td>Pepaya</td>
                               <td class="padding-left">= 100 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
-                            </tr>
-                            <tr>
-                              <td>Pepaya</td>
-                              <td class="padding-left">= 100 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Pepaya?>" /></td>
                             </tr>
                             <tr>
                               <td>Pir</td>
                               <td class="padding-left">= 200 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Pir?>" /></td>
                             </tr>
                             <tr>
                               <td>Salak</td>
                               <td class="padding-left">= 150 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Salak?>" /></td>
                             </tr>
                             <tr>
                               <td>Semangka</td>
                               <td class="padding-left">= 150 gram</td>
-                              <td><input type="checkbox" name="JumlahKalori[]" value="Membaca" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Semangka?>" /></td>
                             </tr>
                           </table>
                       </div>
