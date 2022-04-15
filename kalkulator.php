@@ -208,7 +208,7 @@ $Semangka = $_POST['JumlahKalori'] = 48;
                               <tr>
                                 <td>Crakers</td>
                                 <td class="padding-left">= 50 gram</td>
-                                <td><input type="checkbox" name="Crakers" value="<?php $Crakers ?>" /></td>
+                                <td><input type="checkbox" name="JumlahKalori[]" value="<?php $Crakers ?>" /></td>
                               </tr>
                               <tr>
                                 <td>Makaroni</td>
@@ -620,7 +620,7 @@ $Semangka = $_POST['JumlahKalori'] = 48;
                             <tr>
                               <td>Cah Kacang Panjang</td>
                               <td class="padding-left">= 100 gram</td>
-                              <td><input type="checkbox" name="JumlahKaloric[]" value="<?php $CahKacangPanjang ?>" /></td>
+                              <td><input type="checkbox" name="JumlahKalori[]" value="<?php $CahKacangPanjang ?>" /></td>
                             </tr>
                             <tr>
                               <td>Tumis Buncis</td>
