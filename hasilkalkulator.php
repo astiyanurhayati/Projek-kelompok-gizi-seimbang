@@ -1,6 +1,10 @@
 
+
 <?php
- 
+ //Problem: cara agar saat user memilih beberapa checkbox tersebut, dan saat di submit hasilnya akan menjumlahkan semua total kalori dari makanan yang telah di pilih, lalu menampilkan apa saja makanan yang sudah di pilih tersebut. 
+
+
+
 if(isset($_POST['hitung'])){
     if(!empty($_POST['JumlahKalori'])) {
         $JumlahKalori = 0;

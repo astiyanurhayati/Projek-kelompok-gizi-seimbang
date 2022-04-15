@@ -1,5 +1,7 @@
 <?php
 
+
+//total kalori permakanan
 $JagungRebus = $_POST['JumlahKalori'] = 90.2;
 $KentangRebus = $_POST['JumlahKalori'] = 166;
 $Ketupat = $_POST['JumlahKalori'] = 217;
