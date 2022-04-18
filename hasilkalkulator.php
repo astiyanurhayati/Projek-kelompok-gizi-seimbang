@@ -2,23 +2,44 @@
 
 <?php
  //Problem: cara agar saat user memilih beberapa checkbox tersebut, dan saat di submit hasilnya akan menjumlahkan semua total kalori dari makanan yang telah di pilih, lalu menampilkan apa saja makanan yang sudah di pilih tersebut. 
+ if(isset($_POST['hitung'])){
+
+                        // include("database.php");
+                        // $conn = mysqli_connect("localhost", "root", "", "kalkulator_db");
+                        // $sql="select * from makanan";
+                        // $hasil=mysqli_query($conn,$sql);
+                        //             $no=0;
+                        //             while ($data = mysqli_fetch_array($hasil)) {
+                        //             $no++;
+
+                        //             $ket="";
+                        //             if (isset($_POST['makanan'])) {
+                        //                 $jurusan = trim($_POST['makanan']);
+
+                        //                 if ($jurusan==$data['nama'])
+                        //                 {
+                        //                     $ket="selected";
+                        //                 }
+                        //             }
+                        //           }
+                            
 
 
+  $JumlahKalori = 0;
+  if(!empty($_POST['JumlahKalori'])) {
 
-if(isset($_POST['hitung'])){
-    if(!empty($_POST['JumlahKalori'])) {
-        $JumlahKalori = 0;
-        foreach($_POST['JumlahKalori'] as $kalori){
-            $JumlahKalori += $kalori;
-            echo $JumlahKalori;
-        }
-        
-    }else{
-      echo "pilih makanan yang anda konsumsi";
-    }
-    
- 
+      foreach($_POST['JumlahKalori'] as $x => $kalori){
+        // echo $x;  
+        $JumlahKalori +=  $kalori;
+      }
+      
+  }
+  
+
 }
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -32,11 +53,12 @@ if(isset($_POST['hitung'])){
     <title>Hasil Kalkulator</title>
   </head>
   <body>
+    
     <main>
       <img src="img/hasilkalkulator.png" alt="" />
       <h3>Jumlah Kalori yang anda konsumsi adalah</h3>
-      <h2> <?php echo $JumlahKalori;?> </h2>
-      <h3>Teridiri dari = 1 Gelas Susu</h3>
+      <h2> <?php echo $JumlahKalori; ?> </h2>
+      <h3><?php echo $ket;?></h3>
       <div class="btn">
         <a href="kalkulator.php"> BACK </a>
       </div>
