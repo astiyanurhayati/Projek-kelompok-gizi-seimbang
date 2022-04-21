@@ -5,9 +5,9 @@ $username   = 'root'; // username database
 $password   = ''; // password database
 $dbname     = 'kalkulator_db'; // nama database
  
-$db = mysqli_connect($host, $username, $password, $dbname);
+$con= mysqli_connect($host, $username, $password, $dbname);
  
-// if ($db) {
+// if ($con) {
 //     echo "Database Terhubung";
 // } else {
 //     echo "Database Error";
